@@ -16,6 +16,15 @@ namespace DataBaseConnection
             //.LogTo(s => System.Diagnostics.Debug.WriteLine(s))
             .UseLazyLoadingProxies()
             .UseSqlServer(
-            @"server")
+            @"server=.\SQLExpress;" +
+            @"database=SaleDataBase;" +
+            @"trusted_connection=true;" +
+            @"MultipleActiveResultSets=True"
+            );
+    }
+    
+    protected override void OnMOdelCreating(ModelBuilder modelBuilder)
+    {
+
     }
 }
