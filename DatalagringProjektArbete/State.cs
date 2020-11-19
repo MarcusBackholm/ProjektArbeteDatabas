@@ -7,6 +7,6 @@ namespace Store
 {
     class State
     {
-
+     
     }
 }
